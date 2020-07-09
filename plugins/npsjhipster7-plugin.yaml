@@ -1,0 +1,20 @@
+kind: "EntandoPlugin"
+apiVersion: "entando.org/v1"
+metadata:
+  name: "npsjhipster7-plugin"
+spec:
+  image: nathanshaw/npsjhipster-7:0.0.1-SNAPSHOT
+  replicas: 1
+  dbms: mysql
+  parameters: {}
+  ingressPath: "/npsjhipster7"
+  healthCheckPath: "/management/health"
+  securityLevel: "strict"
+  connectionConfigNames: []
+  permissions: []
+  roles:
+  - name: npsjhipster7-admin
+    code: npsjhipster7-admin
+  - name: conference-3-admin
+    code: "conference-3-admin"
+# entando-needle-descriptor-add-roles - Entando blueprint will add roles here

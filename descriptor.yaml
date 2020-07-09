@@ -1,0 +1,13 @@
+code: npsjhipster7-bundle
+description: This is the npsjhipster7 bundle
+
+components:
+  plugins:
+    - plugins/npsjhipster7-plugin.yaml
+
+  widgets:
+    - ui/widgets/conference-3/tableWidget/conference-3-table-widget-descriptor.yaml
+    - ui/widgets/conference-3/detailsWidget/conference-3-details-widget-descriptor.yaml
+    - ui/widgets/conference-3/formWidget/conference-3-form-widget-descriptor.yaml
+# entando-needle-descriptor-add-widgets - Entando blueprint will add widget bundle files here
+
